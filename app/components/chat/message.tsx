@@ -26,7 +26,6 @@ export const Message = ({ data, user }: { data: TMessage; user: TUser }) => {
           <p>{data.text}</p>
         </>
       )}
-      {/* <p className="">{}</p> */}
     </div>
   );
 };
