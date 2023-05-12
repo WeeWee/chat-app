@@ -1,20 +1,21 @@
-import type { TChatMember, TMessage, TUser } from "~/types";
+import type { TChat, TChatMember, TMessage, TUser } from "~/types";
 import { ChatInput } from "./input";
 import { Messages } from "./messages";
 import { Members } from "./members";
 
 export const Chat = ({
-  members,
+  chat,
   messages,
   user,
 }: {
-  members: TChatMember[];
+  chat: TChat;
   user: TUser;
   messages: TMessage[];
 }) => {
   return (
-    <div className=" max-w-xl relative max-h-full">
-      <Members members={members} />
+    <div className="max-h-full border ">
+      <h1 className="font-semibold capitalize">{chat.name}</h1>
+      <Members members={chat.chat_members} />
       <Messages user={user} messages={messages} />
       <ChatInput />
     </div>

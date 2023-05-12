@@ -16,5 +16,6 @@ export type TChatMember = {
   user: TUser;
 };
 export type TChat = {
+  name: string;
   chat_members: TChatMember[];
 };

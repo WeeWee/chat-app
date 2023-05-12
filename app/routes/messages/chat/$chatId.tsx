@@ -57,14 +57,13 @@ export default function ChatID() {
   );
   useEffect(() => console.log(data), [data]); */
   return (
-    <div>
-      <h1>{chat.name}</h1>
+    <div className="max-w-xl min-w-[40%]">
       <Form method="post">
         <input hidden value="add-member" readOnly name="_action" />
         <input name="email" type="email" />
         <button type="submit">Add member</button>
       </Form>
-      <Chat members={chat.chat_members} user={user} messages={messages} />
+      <Chat chat={chat} user={user} messages={messages} />
     </div>
   );
 }
