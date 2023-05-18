@@ -14,7 +14,6 @@ const envSchema = z.object({
       })
       .parse(JSON.parse(item))
   ),
-  WEBSITE_URL: z.string().min(1)
 });
 
 export const env = envSchema.parse(process.env);

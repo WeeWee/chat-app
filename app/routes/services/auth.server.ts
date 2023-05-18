@@ -97,7 +97,7 @@ const googleStrategy = new GoogleStrategy(
 	{
 		clientID: env.GOOGLE_CLIENT_ID,
 		clientSecret: env.GOOGLE_CLIENT_SECRET,
-		callbackURL: `${env.WEBSITE_URL}/auth/google/callback`,
+		callbackURL: `${process.env.WEBSITE_URL}/auth/google/callback`,
 	},
 	async ({ profile }) => {
 		const {
