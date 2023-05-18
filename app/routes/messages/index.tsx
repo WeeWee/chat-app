@@ -1,3 +1,9 @@
+import { Link } from "@remix-run/react";
+
 export default function Index() {
-  return <div>index</div>;
+	return (
+		<div>
+			<Link to="/messages/chat">Chat</Link>
+		</div>
+	);
 }
