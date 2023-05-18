@@ -1,6 +1,6 @@
 export { Navbar } from "./navbar";
-export { GroupChats } from "./groupchats";
-export { OnlineUsers } from "./onlineusers";
+export { GroupChats } from "./groupChats";
+export { OnlineUsers } from "./onlineUsers";
 export {Chat} from "./chat/chat"
 export {ChatInput} from "./chat/input"
 export {Members} from "./chat/members"
